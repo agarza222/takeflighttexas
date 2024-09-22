@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightblue; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: navy; 
+    font-size: 2.5em; 
+    margin: 0; 
+}
+
+header p {
+    font-size: 1.2em;
+    color: darkslategray;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 45%;
+    margin: 2.5%;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    border-color: darkblue;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product img,
+.product video {
+    width: 100%;
+    height: auto;
+    border: 5px solid blue;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    color: blue;
+    border-bottom: 1px solid blue;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.description {
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:active {
+    color: navy;
+}
