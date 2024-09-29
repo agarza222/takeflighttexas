@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take Flight Texas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-        <h1>Take Flight Texas</h1>
+    <header>
+        <a href="index.html">
+            <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
+        </a>
         <p>Elevating small businesses is our mission.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Products/Services</a></li>
+                <li><a href="content.html">Content Creation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     
     <div class="container">
@@ -36,8 +47,34 @@
                 <source src="images/content.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p class="description">Get your content created here</p>
+            <p class="description">Get your content created here.</p>
+        </div>
+        
+        <div class="product">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="product">
+            <h2>Watch Our Promotional Video</h2>
+            <iframe 
+                src="https://www.youtube.com/embed/8q-RvHUH4vg" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            alert("Thank you for your submission!");
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>

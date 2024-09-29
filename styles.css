@@ -6,20 +6,40 @@ body {
 }
 
 header {
-    background-color: lightblue; 
+    background-color: lightblue;
     padding: 40px 20px;
     text-align: center;
 }
 
-header h1 {
-    color: navy; 
-    font-size: 2.5em; 
-    margin: 0; 
+.logo {
+    width: 2in;
+    height: auto;
 }
 
-header p {
-    font-size: 1.2em;
-    color: darkslategray;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: blue;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: red;
 }
 
 .container {
@@ -51,31 +71,40 @@ header p {
 .product video {
     width: 100%;
     height: auto;
+    max-width: 100%;
     border: 5px solid blue;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
-.product h2 {
-    color: blue;
-    border-bottom: 1px solid blue;
-    padding-bottom: 10px;
-    font-size: 1.5em;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.description {
-    padding: 10px 0;
-    font-size: 1em;
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid blue;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
-}
-
-a:hover {
-    color: darkblue;
-}
-
-a:active {
+th {
+    background-color: lightblue;
     color: navy;
+}
+
+td {
+    background-color: lightcyan;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    border: 5px solid red;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: block;
 }
