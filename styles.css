@@ -78,9 +78,9 @@ nav ul li a:hover {
 }
 
 table {
-    width: 100%;
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
 th, td {
@@ -96,6 +96,11 @@ th {
 
 td {
     background-color: lightcyan;
+}
+
+.services {
+    text-align: center;
+    margin: 20px 0;
 }
 
 iframe {
