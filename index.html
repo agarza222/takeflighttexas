@@ -9,22 +9,25 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
-        </a>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="content.html">Content Creation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
         <p>Elevating small businesses is our mission.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="content.html">Content Creation</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <div class="container">
+
+    <main class="container">
+        <!-- Shirts Collection Section -->
         <div class="product">
             <h2>Shirts Collection</h2>
             <a href="images/shirts.jpg">
@@ -33,6 +36,7 @@
             <p class="description">Explore our stylish range of shirts! CLICK FOR CLOSE</p>
         </div>
 
+        <!-- Custom Graphics Section -->
         <div class="product">
             <h2>Custom Graphics</h2>
             <a href="images/graphics.jpg">
@@ -41,6 +45,7 @@
             <p class="description">Get unique graphic designs tailored for your needs.</p>
         </div>
 
+        <!-- Content Creation Section -->
         <div class="product">
             <h2>Content Creation</h2>
             <video controls>
@@ -49,7 +54,8 @@
             </video>
             <p class="description">Get your content created here.</p>
         </div>
-        
+
+        <!-- Contact Form Section -->
         <div class="product">
             <h2>Contact Us</h2>
             <form id="contactForm">
@@ -59,6 +65,7 @@
             </form>
         </div>
 
+        <!-- Promotional Video Section -->
         <div class="product">
             <h2>Watch Our Promotional Video</h2>
             <iframe 
@@ -68,8 +75,9 @@
                 allowfullscreen>
             </iframe>
         </div>
-    </div>
+    </main>
 
+    <!-- Services Section -->
     <section class="services">
         <h2>Our Services</h2>
         <table>
@@ -110,6 +118,7 @@
         </table>
     </section>
 
+    <!-- JavaScript for Form Submission -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             alert("Thank you for your submission!");
