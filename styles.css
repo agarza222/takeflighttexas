@@ -2,110 +2,129 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ccc;
 }
 
 .logo {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Keeps the aspect ratio */
+    max-width: 150px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+    list-style: none;
     padding: 0;
-    list-style-type: none;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 700;
-    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
 }
 
 .product {
-    flex: 1 1 300px; /* Flex-basis set to 300px */
-    margin: 20px;
-    max-width: 300px; /* Max width for the boxes */
-    text-align: center;
-    border: 1px solid #ccc; /* Border for each product box */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px; /* Padding inside each product box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.product img, .product video {
-    width: 100%;
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img, .product video, .product iframe {
+    max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .description {
     margin-top: 10px;
+    text-align: center;
 }
 
 .services {
-    text-align: center;
     padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
 }
 
-table {
-    width: 80%;
-    margin: 0 auto;
+.services table {
+    width: 100%;
     border-collapse: collapse;
 }
 
-table, th, td {
+.services th, .services td {
     border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
+    padding: 8px;
     text-align: left;
 }
 
-th {
-    background-color: #f4f4f4;
+.services th {
+    background-color: #f2f2f2;
 }
 
-#contactForm {
+.contact {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px auto;
-    width: 60%;
 }
 
-#contactForm input {
-    padding: 10px;
+.contact input {
     margin: 10px 0;
-    width: 100%;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
 }
 
-#contactForm button {
+.contact button {
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #f5b041;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.contact h2 {
-    text-align: center;
+.contact button:hover {
+    background-color: #e67e22;
 }
