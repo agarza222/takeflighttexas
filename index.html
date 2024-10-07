@@ -6,28 +6,127 @@
     <title>Take Flight Texas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            flex: 1;
+            margin: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .product img, .product video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        .services {
+            text-align: center;
+            padding: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Contact form styles */
+        #contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        #contactForm input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        #contactForm button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <a href="index.html">
-                <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="content.html">Content Creation</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="index.html">
+            <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
+        </a>
         <p>Elevating small businesses is our mission.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="content.html">Content Creation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main class="container">
-        <!-- Shirts Collection Section -->
+    
+    <div class="container">
         <div class="product">
             <h2>Shirts Collection</h2>
             <a href="images/shirts.jpg">
@@ -36,7 +135,6 @@
             <p class="description">Explore our stylish range of shirts! CLICK FOR CLOSE</p>
         </div>
 
-        <!-- Custom Graphics Section -->
         <div class="product">
             <h2>Custom Graphics</h2>
             <a href="images/graphics.jpg">
@@ -45,7 +143,6 @@
             <p class="description">Get unique graphic designs tailored for your needs.</p>
         </div>
 
-        <!-- Content Creation Section -->
         <div class="product">
             <h2>Content Creation</h2>
             <video controls>
@@ -55,17 +152,6 @@
             <p class="description">Get your content created here.</p>
         </div>
 
-        <!-- Contact Form Section -->
-        <div class="product">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <!-- Promotional Video Section -->
         <div class="product">
             <h2>Watch Our Promotional Video</h2>
             <iframe 
@@ -75,9 +161,8 @@
                 allowfullscreen>
             </iframe>
         </div>
-    </main>
+    </div>
 
-    <!-- Services Section -->
     <section class="services">
         <h2>Our Services</h2>
         <table>
@@ -118,7 +203,16 @@
         </table>
     </section>
 
-    <!-- JavaScript for Form Submission -->
+    <!-- Contact Form After Table -->
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             alert("Thank you for your submission!");
