@@ -92,7 +92,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    background-color: black;
+    background-color: #333;
     color: white;
     padding: 20px;
     border-radius: 5px;
@@ -110,10 +110,14 @@ nav ul li a:hover {
     margin: 10px 0;
     padding: 10px;
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: black;
+    background-color: #444;
     color: white;
+}
+
+.contact input::placeholder {
+    color: #ccc;
 }
 
 .contact button {
