@@ -12,7 +12,7 @@
         <a href="index.html">
             <img src="images/takeflight.svg" alt="Take Flight Texas Logo" class="logo">
         </a>
-        <p>Elevating small businesses is our mission.</p>
+        <p>Elevating Small Businesses Is Our Mission.</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,17 +27,16 @@
     <div class="container">
         <div class="product">
             <h2>Shirts Collection</h2>
-            <a href="images/shirts.jpg">
-                <img src="images/shirts.jpg" alt="Shirts Collection">
-            </a>
+            <img src="images/shirts.jpg" alt="Shirts Collection" usemap="#shirtsMap">
+            <map name="shirtsMap">
+                <area shape="rect" coords="10,10,200,300" href="custom_shirts.html" alt="Custom Shirts">
+            </map>
             <p class="description">Explore our stylish range of shirts! CLICK FOR CLOSE</p>
         </div>
 
         <div class="product">
             <h2>Custom Graphics</h2>
-            <a href="images/graphics.jpg">
-                <img src="images/graphics.jpg" alt="Custom Graphics">
-            </a>
+            <img src="images/graphics.jpg" alt="Custom Graphics">
             <p class="description">Get unique graphic designs tailored for your needs.</p>
         </div>
 
@@ -109,6 +108,14 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Take Flight Texas. All rights reserved.</p>
+        <audio controls>
+            <source src="audio/small_airplane_start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </footer>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
